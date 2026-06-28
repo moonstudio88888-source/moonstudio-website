@@ -1,334 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Moon Studio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #0b0f14;
-  color: #eae6df;
-}
-
-/* HEADER */
-header {
-  padding: 20px;
-  text-align: center;
-  letter-spacing: 3px;
-  font-size: 14px;
-  color: #c9a86a;
-  border-bottom: 1px solid rgba(201,168,106,0.2);
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: radial-gradient(circle at top, #1a1f2a, #0b0f14);
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 52px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  color: #b8b2a7;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border: 1px solid #c9a86a;
-  color: #c9a86a;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #c9a86a;
-  color: #0b0f14;
-}
-
-/* SECTION */
-.section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  margin-bottom: 40px;
-  color: #ffffff;
-}
-
-/* CARDS */
-.card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(201,168,106,0.15);
-  margin: 15px auto;
-  padding: 25px;
-  max-width: 650px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(201,168,106,0.5);
-}
-
-.card h3 {
-  color: #c9a86a;
-  margin-bottom: 10px;
-}
-
-/* GALLERY */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.gallery img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: 0.3s;
-  filter: grayscale(20%);
-}
-
-.gallery img:hover {
-  transform: scale(1.03);
-  filter: grayscale(0%);
-}
-
-/* TESTIMONIALS */
-.testimonials {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  max-width: 900px;
-  margin: auto;
-}
-
-.testi-card {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(201,168,106,0.15);
-  padding: 20px;
-  border-radius: 15px;
-  text-align: left;
-}
-
-.testi-card p {
-  font-size: 14px;
-  color: #b8b2a7;
-  margin-bottom: 10px;
-}
-
-.testi-card h4 {
-  color: #c9a86a;
-  font-size: 14px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #7a7468;
-  border-top: 1px solid rgba(201,168,106,0.15);
-  margin-top: 50px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #c9a86a;
-  color: #0b0f14;
-  padding: 14px 16px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-/* ANIMATION */
-.reveal {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
 </head>
 
 <body>
 
 <header>
-MOON STUDIO • ART • YOGA • SOUND HEALING
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+MOON STUDIO
+</div>
+
+<div class="nav-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Programs</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</div>
+
+</nav>
+
+</div>
+
 </header>
 
-<!-- HERO -->
-<div class="hero reveal">
-  <h1>Moon Studio</h1>
-  <p>A sanctuary for creativity, healing, and expression</p>
-  <a class="btn" href="https://wa.me/601155564086" target="_blank">Book a Session</a>
-</div>
+<section class="hero">
 
-<!-- PROGRAMS -->
-<div class="section reveal">
-  <h2>Our Programs</h2>
+<div class="hero-content">
 
-  <div class="card">
-    <h3>Kids Art Class</h3>
-    <p>
-      At Moon Studio, we follow a structured module-based art program designed to guide children step by step in developing strong artistic foundations.
+<h1>Moon Studio</h1>
 
-      Students are introduced to drawing fundamentals, explore multiple colour mediums, and engage in creative craft activities that encourage imagination and confidence.
+<p>Nurturing Creativity. Inspiring Confidence.</p>
 
-      Our program also provides an added advantage in developing realistic drawing skills through guided practice and progressive learning.
-    </p>
-
-    <p><b>Learning Levels:</b></p>
-
-    <p>
-      🌱 <b>Beginner</b><br>
-      Focus on basic drawing skills, line control, shapes, colouring fundamentals, and simple creative craft exploration.
-    </p>
-
-    <p>
-      🌿 <b>Intermediate</b><br>
-      Focus on structured drawing, colour techniques, composition, and guided creative projects.
-    </p>
-
-    <p>
-      🎨 <b>Advanced</b><br>
-      Focus on realism, shading techniques, and refined artistic expression.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Kids Yoga</h3>
-    <p>Mindful movement, flexibility, and emotional balance.</p>
-  </div>
-
-  <div class="card">
-    <h3>Sound Healing</h3>
-    <p>Deep relaxation through therapeutic sound vibrations.</p>
-  </div>
-</div>
-
-<!-- GALLERY -->
-<div class="section reveal">
-  <h2>Studio Gallery</h2>
-
-  <div class="gallery">
-    <img src="images/art1.jpg">
-    <img src="images/art2.jpg">
-    <img src="images/art3.jpg">
-    <img src="images/art4.jpg">
-  </div>
-</div>
-
-<!-- PARENTS REVIEW -->
-<div class="section reveal">
-  <h2>Parents Reviews</h2>
-
-  <div class="testimonials">
-
-    <div class="testi-card">
-      <p>“We’re very happy with this art school! My kids genuinely enjoy his classes and always look forward to them. The teacher is very attentive and accommodating, taking the time to adjust lessons based on each child’s skill level, which really helps build their confidence and interest in art. The fees are also very reasonable. Highly recommended for parents looking for a supportive and engaging art class!”</p>
-      <h4>— MJL Ng</h4>
-    </div>
-
-    <div class="testi-card">
-      <p>“We had a great experience with this art class. My child really enjoyed every session and always looks forward to attending. Teacher Vinesh is very patient, dedicated, and knows how to bring out creativity and confidence in children. The fees are reasonable, and the learning environment is very positive. Highly recommended for parents looking for a good art class for their kids! 🎨✨.”</p>
-      <h4>— Keevan2025</h4>
-    </div>
-
-    <div class="testi-card">
-      <p>“Thank you, Teacher Vinesh, for teaching my daughter arts. The fees are reasonable, and Teacher Vinesh is a very responsible and dedicated teacher. I hope more students from different races and religions will join this art class. Highly recommended!”</p>
-      <h4>— Nurul Fatin binti Zulkhair</h4>
-    </div>
-
-  </div>
-</div>
-
-<!-- CONTACT -->
-<div class="section reveal">
-  <h2>Visit Us</h2>
-
-  <div class="card">
-    <p>302-1, Jalan Haruan 5/7</p>
-    <p>Oakland Commercial Centre</p>
-    <p>70300 Seremban</p>
-    <p>01155564086</p>
-  </div>
-</div>
-
-<!-- INSTAGRAM -->
-<div class="section reveal">
-  <h2>Follow Us on Instagram</h2>
-
-  <div class="card">
-    <p>See student artworks, updates & studio moments 🎨✨</p>
-    <br>
-    <a class="btn" href="https://www.instagram.com/vsgpmoonstudio/" target="_blank">
-      Open Instagram
-    </a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-© Moon Studio • Seremban
-</footer>
-
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/601155564086" target="_blank">
-WhatsApp
+<a href="https://wa.me/601155564086" class="btn">
+Book Trial Class
 </a>
 
-<!-- ANIMATION SCRIPT -->
-<script>
-function revealOnScroll() {
-  let elements = document.querySelectorAll(".reveal");
+</div>
 
-  for (let i = 0; i < elements.length; i++) {
-    let windowHeight = window.innerHeight;
-    let elementTop = elements[i].getBoundingClientRect().top;
+</section>
 
-    if (elementTop < windowHeight - 100) {
-      elements[i].classList.add("active");
-    }
-  }
-}
+<section class="section">
 
-window.addEventListener("scroll", revealOnScroll);
-</script>
+<div class="container">
 
-</body>
-</html>
+<h2 class="section-title">
+Why Choose Moon Studio
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Structured Learning</h3>
+<p>Progressive modules designed to build artistic skills step by step.</p>
+</div>
+
+<div class="card">
+<h3>Small Classes</h3>
+<p>Personalised attention for every child.</p>
+</div>
+
+<div class="card">
+<h3>Creative Environment</h3>
+<p>A safe and inspiring space for children to learn and grow.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Programs
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎨 Art Academy</h3>
+<p>Drawing, painting, colouring and creative crafts.</p>
+</div>
+
+<div class="card">
+<h3>🧘 Kids Yoga</h3>
+<p>Balance, flexibility, mindfulness and confidence.</p>
+</div>
+
+<div class="card">
+<h3>🔔 Sound Healing</h3>
+<p>Relaxation and wellness through sound therapy.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Parent Reviews
+</h2>
+
+<div class="cards">
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<br><br>
+"My child enjoys every class and has become much more confident."
+</div>
+git add .
+git commit -m "Updated Moon Studio website"
+git push
