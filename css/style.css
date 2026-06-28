@@ -9,3 +9,4 @@ body {
 .hero {
     height: calc(100vh - 90px);
 }
+.menu-toggle { display: none; font-size: 28px; cursor: pointer; color: #b8860b; } @media (max-width: 768px) { .navbar { flex-direction: row; flex-wrap: wrap; } .menu-toggle { display: block; } .navbar ul { display: none; flex-direction: column; width: 100%; background: #fffaf3; padding: 20px; margin-top: 15px; } .navbar ul.active { display: flex; } }
